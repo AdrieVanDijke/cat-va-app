@@ -1,0 +1,10 @@
+langchain
+PyPDF2
+python-dotenv
+streamlit>=1.28.2
+openai
+altair
+tiktoken
+htmltemplate
+pinecone-client
+nltk

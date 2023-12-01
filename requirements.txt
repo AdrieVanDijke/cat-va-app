@@ -7,4 +7,3 @@ altair
 tiktoken
 htmltemplate
 pinecone-client
-nltk

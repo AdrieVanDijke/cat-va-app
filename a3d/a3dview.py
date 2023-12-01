@@ -1,13 +1,7 @@
 from a3d.a3dmodel import A3DModel
 from a3d.a3dcontroler import A3DControler
 import streamlit as st
-#import nltk
-from nltk.corpus import stopwords
-from nltk.tokenize import word_tokenize
 
-# Maar een keer uitvoeren om data te downloaden:
-#nltk.download('punkt')
-#nltk.download('stopwords')
 
 class A3DGUI:
     def __init__(self):
@@ -35,13 +29,7 @@ class A3DGUI:
         st.info(f"❔ **Je vraag:** {user_question}")
         antwoord = self.a3dcon.ask_the_database(user_question)
         if antwoord == 'NOPE':
-            keywords = self.extract_keywords(user_question) 
-            st.write("Een moment geduld nog a.u.b...") 
-            antwoord2 = self.a3dcon.ask_the_database(keywords)
-            if antwoord2 == 'NOPE':
-                st.warning( self.antwoord_nope(user_question) )                      
-            else:
-                st.success(f"💡**Antwoord:** {antwoord2}")            
+            st.warning( self.antwoord_nope(user_question) )            
         else:
             st.success(f"💡**Antwoord:** {antwoord}")
 
@@ -71,24 +59,6 @@ class A3DGUI:
             """
         return antwoord
 
-    # Extract keywords ==============================
-    def extract_keywords(self, query):
-        stop_words = set(stopwords.words('dutch'))
-        word_tokens = word_tokenize(query)
-        keywords = [word for word in word_tokens if word not in stop_words]
-        # Vervang dubbele woorden door 1 woord
-        keywords = list(dict.fromkeys(keywords))
-        # vervang "kost" door "kosten"
-        keywords = [word.replace('kost', 'kosten') for word in keywords]    
-        # haal alle leestekens uit de lijst
-        keywords = [word for word in keywords if word.isalnum()]
-        # haal alle woorden als de, het, een, etc. uit de lijst
-        keywords = [word for word in keywords if len(word) > 2]
-        # haal alle woorden als wat, wie, waar, etc. uit de lijst
-        keywords = [word for word in keywords if word not in ['wat', 'wie', 'waar', 'wanneer', 'hoe', 'waarom', 'weet', 'Wat', 'Wie', 'Waar', 'Wanneer', 'Hoe', 'Waarom']]    
-        # maak een string van de lijst
-        keywords = ' '.join(keywords)
-        return keywords
     
 
 

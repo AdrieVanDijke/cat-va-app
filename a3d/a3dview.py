@@ -2,7 +2,6 @@ from a3d.a3dmodel import A3DModel
 from a3d.a3dcontroler import A3DControler
 import streamlit as st
 
-
 class A3DGUI:
     def __init__(self):
         self.a3dmod = A3DModel()
@@ -20,9 +19,7 @@ class A3DGUI:
         if user_question:
             if len(user_question) > 0:
                 self.send_question(user_question)
-        #if st.button('Versturen'):
-            #self.send_question(user_question)
-
+                
     # Workers =============================================================
     # Callbacks ====================================
     def send_question(self, user_question):
@@ -40,7 +37,6 @@ class A3DGUI:
                 Dit is geen Chat-bot en je kunt geen uitgebreide gesprekken voeren met deze AI simpelweg omdat als je een nieuwe vraag stelt de vorige vraag en het antwoord daarop niet in het geheugen worden opgeslagen.
                 - Type in het tekst veld hieronder je vraag in gewoon Nederalands en druk op **Enter** om de vraag te versturen.
                 - Probeer je vraag zo goed *(en duidelijk)* mogelijk te formuleren om de AI zo veel mogelijk bruikbare informatie te geven om een goed antwoord te kunnen geven. 
-                *Vermeld b.v. of je een vergoedbare of niet vergoedbare therapeut bent als je vraag betrekking heeft op je beroepsorganisatie.*
                 - Als je je vraag hebt verstuurd gaat er rechtsboven een animatie draaien om aan te geven dat de AI aan het werk is.
                 """       
         return extekst

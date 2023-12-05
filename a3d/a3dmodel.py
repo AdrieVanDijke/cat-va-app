@@ -5,12 +5,6 @@ os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 class A3DModel:
     def __init__(self):
-        """
-        self.api_openai_key = os.getenv("OPENAI_API_KEY")
-        self.pinecone_api_key = os.getenv("PINECONE_API_KEY")
-        self.pinecone_environment = os.getenv("PINECONE_ENVIRONMENT")
-        self.pinecone_index_name = os.getenv("PINECONE_INDEX_NAME")
-        """
         self.api_openai_key = st.secrets["OPENAI_API_KEY"]
         self.pinecone_api_key = st.secrets["PINECONE_API_KEY"]
         self.pinecone_environment = st.secrets["PINECONE_ENVIRONMENT"]

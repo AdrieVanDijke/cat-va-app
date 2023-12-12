@@ -696,7 +696,6 @@ div.WordSection1
 -->
 </style>
 <!--[if gte mso 10]>
-### Vraag en antwoord applicatie voor beroepsorganisatie CAT
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -725,9 +724,8 @@ div.WordSection1
 <div class=WordSection1>
 Vraag en antwoord applicatie voor beroepsorganisatie CAT
 <p>https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen</p>
-
 </div>
-
+### Vraag en antwoord applicatie voor beroepsorganisatie CAT
 </body>
 
 </html>

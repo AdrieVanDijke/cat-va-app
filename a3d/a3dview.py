@@ -8,6 +8,8 @@ class A3DGUI:
         self.a3dmod = A3DModel()
         self.a3dcon = A3DControler(self.a3dmod)
         self.a3dtekst = A3DTeksten()
+        if 'eerstelader' not in st.session_state:
+            st.session_state['eerstelader'] = 'aan'
 
     def start(self):    
         self.build_gui()
@@ -18,7 +20,8 @@ class A3DGUI:
         with st.form('my_form'):
             with st.expander("🪁: **Lees mij:** Gebruiksaanwijzingen & Achtergrondinformatie"):
                 st.write(self.a3dtekst.get_intro_tekst())
-            text = st.text_area('Voer hier je vraag in:', '')
+            #st.write("**Jou vraag:**")
+            text = st.text_area('Stel hier zo gedetailleerd mogelijk je vraag:', '')
             submitted = st.form_submit_button('Versturen')
             if submitted:
                 self.send_question(text)
@@ -27,6 +30,9 @@ class A3DGUI:
     # Callbacks ====================================
     def send_question(self, user_question):
         #st.info(f"❔ **Je vraag:** {user_question}")
+        if st.session_state['eerstelader'] == 'aan':
+            st.session_state['eerstelader'] = 'uit'
+            st.write("🕵️ Een moment geduld a.u.b...") 
         antwoord = self.a3dcon.ask_the_database(user_question)       
         if antwoord == 'NOPE':
             st.write("ℹ️: Geen antwoord gevonden in de database 🕵️ ...")  

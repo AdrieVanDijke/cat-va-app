@@ -14,16 +14,16 @@ xmlns="http://www.w3.org/TR/REC-html40">
  <o:DocumentProperties>
   <o:Author>Adrie Dijke</o:Author>
   <o:LastAuthor>Adrie Dijke</o:LastAuthor>
-  <o:Revision>3</o:Revision>
+  <o:Revision>4</o:Revision>
   <o:TotalTime>11</o:TotalTime>
   <o:Created>2023-11-30T13:11:00Z</o:Created>
-  <o:LastSaved>2023-12-12T15:46:00Z</o:LastSaved>
+  <o:LastSaved>2023-12-12T15:50:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>126</o:Words>
-  <o:Characters>694</o:Characters>
+  <o:Words>127</o:Words>
+  <o:Characters>703</o:Characters>
   <o:Lines>5</o:Lines>
   <o:Paragraphs>1</o:Paragraphs>
-  <o:CharactersWithSpaces>819</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>829</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -35,7 +35,6 @@ xmlns="http://www.w3.org/TR/REC-html40">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Print</w:View>
-  <w:SpellingState>Clean</w:SpellingState>
   <w:TrackMoves>false</w:TrackMoves>
   <w:TrackFormatting/>
   <w:HyphenationZone>21</w:HyphenationZone>
@@ -693,6 +692,8 @@ p
 	mso-fareast-theme-font:minor-fareast;}
 p.msonormal0, li.msonormal0, div.msonormal0
 	{mso-style-name:msonormal;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
 	mso-style-unhide:no;
 	mso-margin-top-alt:auto;
 	margin-right:0cm;
@@ -703,9 +704,6 @@ p.msonormal0, li.msonormal0, div.msonormal0
 	font-family:"Times New Roman",serif;
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -756,33 +754,33 @@ word-wrap:break-word'>
 <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Vraag
 en antwoord applicatie voor beroepsorganisatie CAT <o:p></o:p></span></p>
 
-<p><a href="https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen">https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen</a></p>
+<p>A3D WIKI: <a href="https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen">https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen</a></p>
 
 <p>FLOW:<br>
 <br>
 1. Voer een vraag in<br>
-2. Zoek in de <span class=SpellE>Pinecone</span> Vector database of er een
-antwoord gevonden kan worden op de vraag. Zo ja: Toon antwoord. Als geen
-antwoord kan worden gevonden in de database:<br>
-3. Stuur de vraag door naar het getrainde <span class=SpellE>OpenAI</span> (fine-<span
-class=SpellE>tuned</span>) Model om te kijken of die een antwoord op de vraag
-weet. Zo ja: Toon antwoord. Als geen antwoord kan worden gevonden:<br>
+2. Zoek in de Pinecone Vector database of er een antwoord gevonden kan worden
+op de vraag. Zo ja: Toon antwoord. Als geen antwoord kan worden gevonden in de
+database:<br>
+3. Stuur de vraag door naar het getrainde OpenAI (fine-tuned) Model om te
+kijken of die een antwoord op de vraag weet. Zo ja: Toon antwoord. Als geen
+antwoord kan worden gevonden:<br>
 4. Toon tekst met info en tips om verder te gaan.</p>
 
 <p>GEBRUIKTE SOFTWARE:<br>
 <br>
 Python<br>
 langchain<br>
-python-<span class=SpellE>dotenv</span><br>
-<span class=SpellE>streamlit</span>==1.29.0<br>
-<span class=SpellE>openai</span><br>
-<span class=SpellE>pinecone</span>-client<br>
+python-dotenv<br>
+streamlit==1.29.0<br>
+openai<br>
+pinecone-client<br>
 tiktoken<br>
 <br>
 BEWERKEN:</p>
 
-<p>Bestand: .<span class=SpellE>streamlit</span>/<span class=SpellE>secrets_template.toml</span>
-bewerken (Keys ed. aanpassen) en opslaan als <span class=SpellE>secrets.toml</span></p>
+<p>Bestand: .streamlit/secrets_template.toml bewerken (Keys ed. aanpassen) en
+opslaan als secrets.toml</p>
 
 </div>
 

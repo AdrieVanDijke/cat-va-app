@@ -11,7 +11,6 @@ class A3DTeksten:
         - Type in het tekst veld hieronder je vraag in gewoon Nederalands.
           - *Probeer je vraag zo goed, uitgebreid en duidelijk mogelijk te formuleren.* 
         - Druk op **Ctrl + Enter** *(of klik op de **Versturen knop)*** om de vraag te versturen.
-          - *Als je je vraag hebt verstuurd gaat er rechtsboven een animatie draaien om aan te geven dat de AI aan het werk is.*
         """
         return intro_tekst
 

@@ -723,9 +723,9 @@ div.WordSection1
 
 <div class=WordSection1>
 
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Vraag
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>### Vraag
 en antwoord applicatie voor beroepsorganisatie CAT<o:p></o:p></span></p>
-<p>(https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen)</p>
+<p>https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen</p>
 
 </div>
 

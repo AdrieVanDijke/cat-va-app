@@ -9,10 +9,6 @@ from openai import OpenAI
 import streamlit as st
 from a3d.a3d_teksten import A3DTeksten
 
-#import logging
-
-#logging.basicConfig(level=logging.DEBUG)
-
 # Maak een client-object
 client = OpenAI(api_key=openai.api_key)
 

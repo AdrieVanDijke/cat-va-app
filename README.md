@@ -720,8 +720,6 @@ div.WordSection1
 </head>
 
 <body lang=NL style='tab-interval:35.4pt;word-wrap:break-word'>
-### Vraag en antwoord applicatie voor beroepsorganisatie CAT
-
 
 <div class=WordSection1>
 Vraag en antwoord applicatie voor beroepsorganisatie CAT

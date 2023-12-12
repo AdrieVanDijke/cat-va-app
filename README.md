@@ -722,9 +722,7 @@ div.WordSection1
 <body lang=NL style='tab-interval:35.4pt;word-wrap:break-word'>
 
 <div class=WordSection1>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>### Vraag
-en antwoord applicatie voor beroepsorganisatie CAT<o:p></o:p></span></p>
+### Vraag en antwoord applicatie voor beroepsorganisatie CAT
 <p>https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen</p>
 
 </div>

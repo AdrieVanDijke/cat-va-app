@@ -9,16 +9,10 @@ class A3DModel:
         self.pinecone_api_key = st.secrets["PINECONE_API_KEY"]
         self.pinecone_environment = st.secrets["PINECONE_ENVIRONMENT"]
         self.pinecone_index_name = st.secrets["PINECONE_INDEX_NAME"]
-        self.mode = 'Documents'
         self.aimodel = "gpt-3.5-turbo"
-        self.engine = "davinci"
-        self.api = "OpenAI API"
+        self.finemodel = st.secrets["FINETUNED_MODEL"]
         self.temperature = 0.0 # chatcompletion / completion parameter
-        self.max_tokens = 1200 # chatcompletion / completion parameter
-        self.frequency_penalty = 0.0 # completion parameter
-        self.presence_penalty = 0.0 # completion parameter
-        self.top_p = 0.2 # completion parameter
-        self.n_epochs = 4 # training parameter
-        self.stop = "" # completion parameter
+        self.max_tokens = 2000 # chatcompletion / completion parameter
+
         
         

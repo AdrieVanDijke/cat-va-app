@@ -14,16 +14,16 @@ xmlns="http://www.w3.org/TR/REC-html40">
  <o:DocumentProperties>
   <o:Author>Adrie Dijke</o:Author>
   <o:LastAuthor>Adrie Dijke</o:LastAuthor>
-  <o:Revision>2</o:Revision>
-  <o:TotalTime>1</o:TotalTime>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>11</o:TotalTime>
   <o:Created>2023-11-30T13:11:00Z</o:Created>
-  <o:LastSaved>2023-11-30T13:12:00Z</o:LastSaved>
+  <o:LastSaved>2023-12-12T15:46:00Z</o:LastSaved>
   <o:Pages>1</o:Pages>
-  <o:Words>8</o:Words>
-  <o:Characters>49</o:Characters>
-  <o:Lines>1</o:Lines>
+  <o:Words>126</o:Words>
+  <o:Characters>694</o:Characters>
+  <o:Lines>5</o:Lines>
   <o:Paragraphs>1</o:Paragraphs>
-  <o:CharactersWithSpaces>56</o:CharactersWithSpaces>
+  <o:CharactersWithSpaces>819</o:CharactersWithSpaces>
   <o:Version>16.00</o:Version>
  </o:DocumentProperties>
  <o:OfficeDocumentSettings>
@@ -51,6 +51,7 @@ xmlns="http://www.w3.org/TR/REC-html40">
    <w:BreakWrappedTables/>
    <w:SplitPgBreakAndParaMark/>
   </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
   <m:mathPr>
    <m:mathFont m:val="Cambria Math"/>
    <m:brkBin m:val="before"/>
@@ -665,6 +666,31 @@ xmlns="http://www.w3.org/TR/REC-html40">
 	font-family:"Times New Roman",serif;
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:#0563C1;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:#954F72;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
 p.msonormal0, li.msonormal0, div.msonormal0
 	{mso-style-name:msonormal;
 	mso-style-unhide:no;
@@ -677,6 +703,9 @@ p.msonormal0, li.msonormal0, div.msonormal0
 	font-family:"Times New Roman",serif;
 	mso-fareast-font-family:"Times New Roman";
 	mso-fareast-theme-font:minor-fareast;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
 .MsoChpDefault
 	{mso-style-type:export-only;
 	mso-default-props:yes;
@@ -719,11 +748,42 @@ div.WordSection1
  </o:shapelayout></xml><![endif]-->
 </head>
 
-<body lang=NL style='tab-interval:35.4pt;word-wrap:break-word'>
+<body lang=NL link="#0563C1" vlink="#954F72" style='tab-interval:35.4pt;
+word-wrap:break-word'>
 
 <div class=WordSection1>
-Vraag en antwoord applicatie voor beroepsorganisatie CAT
-<p>https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen</p>
+
+<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Vraag
+en antwoord applicatie voor beroepsorganisatie CAT <o:p></o:p></span></p>
+
+<p><a href="https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen">https://www.a3d.nl/dokuwiki/doku.php?id=a3d_bot_bouwen</a></p>
+
+<p>FLOW:<br>
+<br>
+1. Voer een vraag in<br>
+2. Zoek in de <span class=SpellE>Pinecone</span> Vector database of er een
+antwoord gevonden kan worden op de vraag. Zo ja: Toon antwoord. Als geen
+antwoord kan worden gevonden in de database:<br>
+3. Stuur de vraag door naar het getrainde <span class=SpellE>OpenAI</span> (fine-<span
+class=SpellE>tuned</span>) Model om te kijken of die een antwoord op de vraag
+weet. Zo ja: Toon antwoord. Als geen antwoord kan worden gevonden:<br>
+4. Toon tekst met info en tips om verder te gaan.</p>
+
+<p>GEBRUIKTE SOFTWARE:<br>
+<br>
+Python<br>
+langchain<br>
+python-<span class=SpellE>dotenv</span><br>
+<span class=SpellE>streamlit</span>==1.29.0<br>
+<span class=SpellE>openai</span><br>
+<span class=SpellE>pinecone</span>-client<br>
+tiktoken<br>
+<br>
+BEWERKEN:</p>
+
+<p>Bestand: .<span class=SpellE>streamlit</span>/<span class=SpellE>secrets_template.toml</span>
+bewerken (Keys ed. aanpassen) en opslaan als <span class=SpellE>secrets.toml</span></p>
+
 </div>
 
 </body>

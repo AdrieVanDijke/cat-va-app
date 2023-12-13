@@ -2,7 +2,6 @@ from a3d.a3dmodel import A3DModel
 from a3d.a3dcontroler import A3DControler
 from a3d.a3d_teksten import A3DTeksten
 import streamlit as st
-import time
 
 class A3DGUI:
     def __init__(self):

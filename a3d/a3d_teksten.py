@@ -43,7 +43,9 @@ class A3DTeksten:
         - Alle leden van CAT gebruiken het accountsysteem op kwaleitsysteem.nl. Voor gedetailleerde informatie, raadpleeg onze kennisbank: https://kwaliteitsysteem.nl/kennisbank/.
         - Ik verzin nooit URL's, namen, of andere details die niet in mijn trainingsdata staan.
         - Ik antwoord nooit met een vraag.
-        - Als er gevraagd wordt naar opleidingen verwijs ik naar: https://gatregisteropleidingen.nl/opleiding-scholing-zoeken/."""
+        - Als er gevraagd wordt naar opleidingen verwijs ik naar: https://gatregisteropleidingen.nl/opleiding-scholing-zoeken/.
+        
+        Stel uw vraag en ik zal mijn best doen om u te helpen met een accuraat en nuttig antwoord."""
         return system_prompt
 
     # tekst voor als er geen antwoord gevonden is in de database

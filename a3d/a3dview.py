@@ -14,7 +14,7 @@ class A3DGUI:
             st.session_state['naam'] = ''
 
     def start(self): 
-        # haal data uit de url
+        # haal data uit de url =================
         url = st.experimental_get_query_params()
         if url != {}:
             if 'var' in url:
@@ -31,10 +31,6 @@ class A3DGUI:
         with st.form('my_form'):
             with st.expander("🪁: **Lees mij:** Gebruiksaanwijzingen & Achtergrondinformatie"):
                 st.write(self.a3dtekst.get_intro_tekst())
-            # als st.session_state['naam'] geen lege string is dan is er een naam uit de url gehaald
-            if st.session_state['naam'] != '':
-                st.write(f"ℹ️: Welkom {st.session_state['naam']}! 🤗")
-
             text = st.text_area('Stel hier je vraag:', '')
             submitted = st.form_submit_button('Versturen')
             if submitted:               

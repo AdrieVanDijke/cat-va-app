@@ -9,8 +9,8 @@ class A3DGUI:
         self.a3dmod = A3DModel()
         self.a3dcon = A3DControler(self.a3dmod)
         self.a3dtekst = A3DTeksten()
-        if 'wpid' not in st.session_state:
-            st.session_state['wpid'] = 0
+        if 'var' not in st.session_state:
+            st.session_state['var'] = 0
         if 'naam' not in st.session_state:
             st.session_state['naam'] = ''
 

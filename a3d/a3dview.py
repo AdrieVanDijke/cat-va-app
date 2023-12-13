@@ -31,7 +31,11 @@ class A3DGUI:
         with st.form('my_form'):
             with st.expander("🪁: **Lees mij:** Gebruiksaanwijzingen & Achtergrondinformatie"):
                 st.write(self.a3dtekst.get_intro_tekst())
-            text = st.text_area('Stel hier zo gedetailleerd mogelijk je vraag:', '')
+            # als st.session_state['naam'] geen lege string is dan is er een naam uit de url gehaald
+            if st.session_state['naam'] != '':
+                st.write(f"ℹ️: Welkom {st.session_state['naam']}! 🤗")
+
+            text = st.text_area('Stel hier je vraag:', '')
             submitted = st.form_submit_button('Versturen')
             if submitted:               
                 self.send_question(text)

@@ -61,8 +61,8 @@ class A3DControler:
         system_prompt = self.a3dtekst.get_qa_system_prompt()
         completion = client.chat.completions.create(       
             model=self.a3dmod.finemodel,
-            temperature=self.a3dmod.temperature,
-            max_tokens=self.a3dmod.max_tokens,
+            temperature=self.a3dmod.fine_temperature,
+            max_tokens=self.a3dmod.fine_max_tokens,
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": input_text}

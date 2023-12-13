@@ -11,8 +11,10 @@ class A3DModel:
         self.pinecone_index_name = st.secrets["PINECONE_INDEX_NAME"]
         self.aimodel = "gpt-3.5-turbo"
         self.finemodel = st.secrets["FINETUNED_MODEL"]
-        self.temperature = 0.3 # chatcompletion / completion parameter
-        self.max_tokens = 2000 # chatcompletion / completion parameter
+        self.temperature = 0.2 
+        self.max_tokens = 2000 
+        self.fine_temperature = 0.0 
+        self.fine_max_tokens = 2000
 
         
         

@@ -27,9 +27,9 @@ class A3DGUI:
 
     # Bouw GUI op ========================================================
     def build_gui(self):
-        st.subheader("☯️ Vraag & Antwoord 🛠️ Training ⚙️")
+        st.subheader("🤖 Vraag & Antwoord 🛠️ Training ⚙️")
         with st.form('my_form'):
-            with st.expander("🪁: **Lees mij:** Gebruiksaanwijzingen & Achtergrondinformatie"):
+            with st.expander("🎈: **Lees mij:** Gebruiksaanwijzingen & Achtergrondinformatie"):
                 st.write(self.a3dtekst.get_intro_tekst())
             text = st.text_area('Stel hier je vraag:', '')
             submitted = st.form_submit_button('Versturen')
@@ -53,7 +53,7 @@ class A3DGUI:
                 st.info(f"💡**Antwoord Fine-tuned Model:** {antwoord2}")  
                 preloader.empty()        
         else:
-            st.info(f"💡**Antwoord Database:** {antwoord}")
+            st.success(f"💡**Antwoord Database:** {antwoord}")
             preloader.empty()
 
 

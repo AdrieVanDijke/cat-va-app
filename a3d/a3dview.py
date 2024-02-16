@@ -15,13 +15,13 @@ class A3DGUI:
 
     def start(self): 
         # haal data uit de url =================
-        url = st.experimental_get_query_params()
+        url = url = st.query_params
         if url != {}:
             if 'var' in url:
-                var = url['var'][0]
+                var = url['var']
                 st.session_state['var'] = var                   
             if 'naam' in url:
-                naam = url['naam'][0]
+                naam = url['naam']
                 st.session_state['naam'] = naam                       
         self.build_gui()
 

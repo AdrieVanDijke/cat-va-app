@@ -19,6 +19,7 @@ class A3DTeksten:
         prompt_template = """Gebruik de onderstaande context om de vraag te beantwoorden. Vermijd het vermelden van de context zoals b.v. in: 'In de context staat...'. 
         Als je het antwoord niet weet, of twijfeld aan de juistheid van het antwoord, antwoord dan met alleen het woord: 'NOPE'. Verzin geen antwoord, URL's, namen of andere informatie die niet direct uit de context gehaald kan worden. 
         Concentreer je op de vraag en het beantwoorden daarvan zonder overbodige informatie te geven die niets met de vraag te maken heeft. Neem de tijd om een goed antwoord te vinden.
+        Geef als er een url wordt opgegeven die te maken heeft met de vraag een doorklikbare url mee in het antwoord.
         Wanneer er gevraagd wordt naar geschikte opleidingen, geef dan de volgende link: https://gatregisteropleidingen.nl/opleiding-scholing-zoeken/
 
         {context}
